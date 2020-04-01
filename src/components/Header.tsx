@@ -1,12 +1,13 @@
 import React, { useRef, useEffect } from 'react';
-import './styles/Header.css';
+import NavTab from "./NavTab";
+import './styles/Header.scss';
 
 interface Props {
   title: string;
   text: string[];
 }
 
-const Header: React.FC<Props> = ({title, text}) => {
+const Header: React.FC<Props> = ( {title, text} ) => {
 //  const previousElement  = useRef<HTMLElement| null>(null);
  const navBar  = useRef<HTMLDivElement | null>(null);
  const activateLink  = useRef<HTMLAnchorElement | null>(null);
@@ -28,19 +29,7 @@ const Header: React.FC<Props> = ({title, text}) => {
        </div>
      </header>
      <div className="nav-bar" ref={ref => navBar.current = ref}>
-        {text && text.map((v, k) => 
-          <div key={k} className="nav-tab">
-            <a href={`#${v}`}
-            ref={ref => {
-              if (window.location.hash === `#${v}`)
-                activateLink.current = ref
-            }}
-              onClick={e => {
-                activateLink.current?.classList.remove("active");
-                activateLink.current = (e.target as HTMLAnchorElement);
-                (e.target as HTMLElement).classList.add("active");
-            }}>{v}</a>
-          </div>) }
+        {text && text.map((v, k) => <NavTab key={k} v={v} activateLink={activateLink} />) }
     </div>
    </div>
  )

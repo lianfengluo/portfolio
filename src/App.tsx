@@ -1,10 +1,14 @@
 import React from 'react';
-import Header from './components/Header'; 
 import Footer from './components/Footer'; 
-import Content from './pages/Content'; 
-import './App.css';
+import Header from './components/Header'; 
+import Content from './pages/Content';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import './App.scss';
 
-const navTab: string[] = ["Home", "Projects", "About"];
+library.add(fab)
+
+const navTab: string[] = ["Home", "Careers", "Projects", "About"];
 
 const App: React.FC<{}> = () => {
   return (
