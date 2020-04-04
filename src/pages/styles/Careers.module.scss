@@ -1,20 +1,19 @@
 .careers {
   background-color: salmon;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   min-width: 1000px;
   display: flex;
   justify-content: center;
-  // flex-direction: column;
+  flex-direction: row;
   overflow-y: scroll;
 
   .info {
     display: flex;
-    justify-content: center;
     padding-left: 3rem;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 60vw;
     row-gap: 4rem;
 
     > div {
@@ -46,6 +45,7 @@
         height: 0;
         transition: all .5s ease-in-out;
         font-size: 1.5rem;
+        box-sizing: border-box;
 
         .date {
           color: rgba(192, 192, 192, 0.5);
@@ -82,18 +82,44 @@
 
     > div:hover {
       .description {
+        margin-top: 20px;
+        border-top: 2px solid rgba(255, 255, 255, 255.85);
         height: 250px;
       }
       @media screen and (max-width: 1500px) {
         .description {
+          margin-top: 10px;
           height: 200px;
         }
       }
     }
   }
-
   .career-logos {
-    width: 40%;
-    height: 100%;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    > div {
+      transition: opacity 1s;
+      height: 70% !important;
+      padding-right: 3rem;
+      position: absolute;
+      opacity: 0%;
+
+      img {
+        width: 80%;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+
+    .active {
+      opacity: 100%;
+    }
   }
 }
+

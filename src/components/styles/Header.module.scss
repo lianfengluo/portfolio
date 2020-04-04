@@ -1,7 +1,16 @@
+@keyframes invisible {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
 .header {
-  width: 100%;
+  width: 100vw;
   display: flex;
-  background: rgba(0, 0, 0, 0.87);
+  background: rgba(0, 0, 0, 0.637);
   justify-content: space-between;
   align-items: center;
   line-height: 200%;
@@ -10,6 +19,11 @@
   font-weight: 500;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.383);
   justify-content: space-evenly;
+  position: absolute;
+  opacity: 0%;
+  z-index: 1000 !important;
+  transition: opacity 1s;
+  animation: invisible 3s;
 
   .header-content {
     color: white;
@@ -21,6 +35,7 @@
   
   .header-title {
     margin-left: 20px;
+    font-family: Brush Script MT, Chalkduster;
   }
   
   .nav-bar {
@@ -40,6 +55,7 @@
     align-items: center;
     box-sizing: border-box;
     font-size: 1.8rem;
+    justify-items: center;
   
     > a {
       cursor: pointer;
@@ -48,9 +64,6 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      position: relative;
-      transform: translateY(-50%);
-      top: 50%;
       color: rgba(255, 255, 255, 0.6);
     }
     
@@ -63,7 +76,7 @@
     .active {
       color: rgba(255, 255, 255, 0.8);
       border-top: 5px solid rgba(0, 0, 0, 0);
-      border-bottom: 5px solid rgba(224, 223, 223, 0.6);
+      border-bottom: 5px solid rgba(224, 223, 223, 0.4);
     }
   }
 
@@ -83,14 +96,18 @@
   .nav-tab-text {
     padding-left: 30px;
     padding-right: 30px;
-    border-right: 1px solid rgba(206, 206, 206, 0.678);
+    border-right: 1px solid rgba(206, 206, 206, 0.4);
   }
   
   .nav-tab:first-child {
     .nav-tab-text {
-      border-left: 1px solid rgba(206, 206, 206, 0.678);
+      border-left: 1px solid rgba(206, 206, 206, 0.4);
     }
-  }
-  
-  
+  } 
+}
+
+
+.header:hover {
+  // visibility: visible;
+  opacity: 100% !important;
 }

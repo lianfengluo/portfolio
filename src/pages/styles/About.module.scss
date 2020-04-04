@@ -1,0 +1,11 @@
+.about {
+  background-color: salmon;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-left: 3rem;
+  flex-direction: column;
+  min-width: 1200px;
+  overflow-y: scroll;
+}
