@@ -20,6 +20,7 @@ const NavTab: React.FC<Props> = ({ v, activateLink }) => {
         }}
         onClick={() => {
           activateLink.current?.classList.remove(styles["active"]);
+          document.body.setAttribute("class", v.toLowerCase());
           activateLink.current = currentRef.current;
           currentRef.current?.classList.add(styles["active"]);
         }}
