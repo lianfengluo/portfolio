@@ -1,3 +1,12 @@
+@keyframes invisible {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .footer {
   font-family: Impact;
   display: flex;
@@ -10,9 +19,17 @@
   color: white;
   position: absolute;
   background: rgba(0, 0, 0, 0.87);
+  opacity: 0;
   z-index: 999;
+  transition: opacity 1s;
+  animation: invisible 3s;
 
   > .author {
     font-weight: 600;
   }
+}
+
+
+.footer:hover {
+  opacity: 1 !important;
 }

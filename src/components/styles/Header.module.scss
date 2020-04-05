@@ -1,9 +1,9 @@
 @keyframes invisible {
   0% {
-    opacity: 100%;
+    opacity: 1;
   }
   100% {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
@@ -20,7 +20,10 @@
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.383);
   justify-content: space-evenly;
   position: absolute;
+  opacity: 0;
   z-index: 999;
+  transition: opacity 1s;
+  animation: invisible 3s;
 
   .header-content {
     color: white;
@@ -101,4 +104,9 @@
       border-left: 1px solid rgba(206, 206, 206, 0.4);
     }
   } 
+}
+
+
+.header:hover {
+  opacity: 1 !important;
 }
