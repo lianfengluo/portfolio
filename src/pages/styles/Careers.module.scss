@@ -14,9 +14,11 @@
     flex-direction: column;
     justify-content: center;
     width: 60vw;
-    row-gap: 4rem;
 
     > div {
+
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       width: 50rem;
       background-color: darken($color: #000000a6, $amount: 12);
       padding: 2rem;
@@ -57,7 +59,6 @@
     }
 
     @media screen and (max-width: 1500px) {
-      row-gap: 0.5rem;
 
       > div {
         width: 23rem;

@@ -32,6 +32,7 @@ const Projects: React.FC<{}> = () => {
                       href="https://lianfengluo.github.io/sorting_project/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={styles["add-margin"]}
                     >
                       <FontAwesomeIcon icon={faGlobe} />
                     </a>

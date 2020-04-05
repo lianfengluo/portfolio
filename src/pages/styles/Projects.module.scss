@@ -79,12 +79,11 @@
         color: white;
         min-width: 300px;
         transform: rotateY(180deg);
-        column-gap: 2rem;
         font-size: 1.2rem;
         font-weight: 500;
 
         .filp-card__icon {
-          column-gap: 0.5rem;
+          margin-top: 1.5rem;
           a {
             color: white;
             font-size: 1.8rem;
@@ -100,12 +99,13 @@
           font-size: 1.5rem;
           font-weight: 600;
           flex-direction: column;
-          row-gap: 1.5rem;
         }
 
         .project-description {
           flex-direction: column;
-          row-gap: 3rem;
+          :first-child {
+            margin-bottom: 3rem;
+          }
         }
         @media screen and (max-width: 400px) {
           .card-title {
@@ -131,6 +131,9 @@
       grid-area: project4;
     }
   
+    .add-margin {
+      margin-left: 1rem;
+    }
     .project5 {
       grid-area: project5;
       .flip-card {
