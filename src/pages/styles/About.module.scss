@@ -8,8 +8,8 @@
   padding-left: 3rem;
   min-width: 1200px;
   overflow-y: scroll;
-  padding-top: 5rem;
-  row-gap: 10vh;
+  padding-top: 8rem;
+  row-gap: 5vh;
 
 
   @keyframes show {
@@ -43,7 +43,6 @@
       width: 90%;
       font-size: 3rem;
       font-weight: 700;
-      border-bottom: solid 1px rgba(0, 0, 0, 0.2);
     }
 
     .skill__content {
@@ -55,7 +54,8 @@
       justify-content: center;
 
       & > :not(:last-child)  {
-        border-right: solid .5px rgba(0, 0, 0, 0.2);
+        margin-right: 3px;
+        // border-right: solid .5px rgba(0, 0, 0, 0.2);
       }
     }
 
