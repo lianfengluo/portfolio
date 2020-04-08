@@ -21,14 +21,14 @@ const Header: React.FC<Props> = ({ title, text }) => {
   }, []);
 
   return (
-    <div className={styles["header"]}>
+    <header className={styles["header"]}>
       <header className={styles["header-content"]}>
         <div className={styles["header-title"]}>{title}</div>
       </header>
       <div className={styles["nav-bar"]} ref={(ref) => (navBar.current = ref)}>
         {text && text.map((v, k) => <NavTab key={k} v={v} activateLink={activateLink} />)}
       </div>
-    </div>
+    </header>
   );
 };
 

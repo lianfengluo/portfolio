@@ -23,6 +23,7 @@ const NavTab: React.FC<Props> = ({ v, activateLink }) => {
           document.body.setAttribute("class", v.toLowerCase());
           activateLink.current = currentRef.current;
           currentRef.current?.classList.add(styles["active"]);
+          window.history.pushState(null, v, `#${v}`);
         }}
       >
         <span className={styles["nav-tab-text"]}>{v}</span>

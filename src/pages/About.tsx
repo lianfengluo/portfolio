@@ -25,7 +25,7 @@ const About: React.FC<{}> = () => {
     <div className={styles["about"]}>
       <div className={styles["skill"]} ref={(ref) => (skillRef.current = ref)}>
         <div className={styles["skill__title"]}>Skills</div>
-        <div className={styles["skill__content"]}>
+        <section className={styles["skill__content"]}>
           <div className={styles["skill__content__col1"]}>
             <div className={styles["skill__content__title"]}>LANGUAGES</div>
             <ul className={styles["skill__content__detail"]}>
@@ -36,10 +36,10 @@ const About: React.FC<{}> = () => {
             </ul>
           </div>
           <div className={styles["skill__content__col2"]}>
-            <div className={styles["skill__content__title"]}>FRAMEWORKS</div>
+            <div className={styles["skill__content__title"]}>Packages</div>
             <ul className={styles["skill__content__detail"]}>
               <li>
-                <strong>React, Django, Django REST framework, Typescript</strong>
+                <strong>React, Django, Django REST framework, Typescript, Jest, Enzyme</strong>
               </li>
               <li>Node.js, Redux</li>
             </ul>
@@ -65,10 +65,10 @@ const About: React.FC<{}> = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </section>
       </div>
       <div className={styles["other"]} ref={(ref) => (otherRef.current = ref)}>
-        <div className={styles["education"]}>
+        <section className={styles["education"]}>
           <div className={styles["title"]}>EDUCATION</div>
           <div className={styles["info"]}>
             <div>
@@ -92,8 +92,8 @@ const About: React.FC<{}> = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles["communication"]}>
+        </section>
+        <section className={styles["communication"]}>
           <div className={styles["title"]}>COMMUNICATION SKILLS</div>
           <div>
             <strong>CANTONESE:</strong> Native speaker
@@ -104,8 +104,8 @@ const About: React.FC<{}> = () => {
           <div>
             <strong>ENGLISH:</strong> Advanced
           </div>
-        </div>
-        <div className={styles["community"]}>
+        </section>
+        <section className={styles["community"]}>
           <div className={styles["title"]}>SCHOOL COMMUNITY</div>
           <div>
             <time>2019</time>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -114,7 +114,7 @@ const About: React.FC<{}> = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A member of
             education team at UNSW data science
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );
