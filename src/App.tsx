@@ -23,7 +23,7 @@ const App: React.FC<{}> = () => {
   return (
     <div className={styles["App"]}>
       <Header title={"Richard's Portfolio"} text={navTab} />
-      <div className={styles["Content"]}>
+      <main className={styles["Content"]}>
         <div id="Home">
           <Home />
         </div>
@@ -36,7 +36,7 @@ const App: React.FC<{}> = () => {
         <div id="About">
           <About />
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );
