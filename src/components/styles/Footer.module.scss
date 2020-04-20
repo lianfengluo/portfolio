@@ -12,12 +12,11 @@
   display: flex;
   bottom: 0;
   height: 64px;
-  position: sticky;
+  position: absolute;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   color: white;
-  position: absolute;
   background: rgba(0, 0, 0, 0.87);
   opacity: 0;
   z-index: 999;
