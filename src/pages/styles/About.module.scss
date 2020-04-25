@@ -66,22 +66,22 @@
   }
 }
 
-.skill__content__col1, .skill__content__col2, .skill__content__col3, .skill__content__col4 {
+.skill__content__title {
+  text-align: left;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media screen and (max-height: 700px) {
   .skill__content__title {
-    text-align: left;
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 550;
   }
-  @media screen and (max-height: 700px) {
-    .skill__content__title {
-      font-size: 1.3rem;
-      font-weight: 550;
-    }
-  }
-  .skill__content__detail {
-    margin-top: 1.3rem;
-  }
+}
+.skill__content__detail {
+  margin-top: 1.3rem;
+}
+.skill__content__col1, .skill__content__col2, .skill__content__col3, .skill__content__col4 {
   width: 25%;
   position: relative;
 }
@@ -115,13 +115,12 @@
   font-weight: 700;
   margin-bottom: .5rem;
 }
-.other .education {
-  .info {
-    display: flex;
-    
-    > div {
-      flex: 1;
-    }
+
+.other .education .info {
+  display: flex;
+  
+  > div {
+    flex: 1;
   }
 }
 .other .communication {

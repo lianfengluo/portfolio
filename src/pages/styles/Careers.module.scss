@@ -16,45 +16,46 @@
   justify-content: center;
   width: 60vw;
 
-  .hivery, .UNSW, .NetEase {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 50rem;
-    background-color: darken($color: #000000a6, $amount: 12);
-    padding: 2rem;
-    border-radius: 1rem;
-    cursor: pointer;
+}
 
-    .company {
-      font-size: 3.5rem;
-      color: rgba(255, 255, 255, 0.9);
-      font-weight: 800;
-    }
-  
-    .job-title {
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 2rem;
-      font-weight: 600;
-    }
+.hivery, .UNSW, .NetEase {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 50rem;
+  background-color: darken($color: #000000a6, $amount: 12);
+  padding: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
 
-    .description {
-      color: lightcyan;
-      font-weight: 600;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      overflow-y: hidden;
-      height: 0;
-      transition: all .5s ease-in-out;
-      font-size: 1.5rem;
-      box-sizing: border-box;
+  .company {
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 800;
+  }
 
-      .date {
-        color: rgba(192, 192, 192, 0.5);
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
+  .job-title {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .description {
+    color: lightcyan;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    height: 0;
+    transition: all .5s ease-in-out;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+
+    .date {
+      color: rgba(192, 192, 192, 0.5);
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
   }
 }
@@ -92,7 +93,6 @@
       font-size: 1rem;
     }
   }
-
 }
 
 .career-logos {
