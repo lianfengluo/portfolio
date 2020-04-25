@@ -10,46 +10,46 @@
   min-height: 500px;
   overflow-y: auto;
 
-  .intro {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 3.5rem;
-    font-weight: 600;
-    > .name {
-      color: salmon;
-    }
-    > .name:hover {
-      color: rgb(246, 103, 87);
-    }
+}
+.intro {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 3.5rem;
+  font-weight: 600;
+  > .name {
+    color: salmon;
   }
+  > .name:hover {
+    color: rgb(246, 103, 87);
+  }
+}
 
-  .intro:hover {
-    color: rgba(255, 255, 255, 0.75);
-  }
+.intro:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
 
-  .bio {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 5rem;
-    font-weight: 800;
-  }
+.bio {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 5rem;
+  font-weight: 800;
+}
 
-  .bio:hover {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  
-  .icons {
-    display: flex;
-  }
+.bio:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
 
-  .icons {
-    a {
-      font-size: 50px;
-      margin-right: 30px;
-      color: white;
-      transition: font-size 0.5s;
-    }
-    a:hover {
-      font-size: 70px;
-    }
+.icons {
+  display: flex;
+}
+
+.icons {
+  a {
+    font-size: 50px;
+    margin-right: 30px;
+    color: white;
+    transition: font-size 0.5s;
+  }
+  a:hover {
+    font-size: 70px;
   }
 }
 

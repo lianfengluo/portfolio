@@ -27,7 +27,7 @@ const About: React.FC<{}> = () => {
         <div className={styles["skill__title"]}>Skills</div>
         <section className={styles["skill__content"]}>
           <div className={styles["skill__content__col1"]}>
-            <div className={styles["skill__content__title"]}>LANGUAGES</div>
+            <h3 className={styles["skill__content__title"]}>LANGUAGES</h3>
             <ul className={styles["skill__content__detail"]}>
               <li>
                 <strong>Python, JavaScript, CSS, C/C++, HTML</strong>
@@ -36,7 +36,7 @@ const About: React.FC<{}> = () => {
             </ul>
           </div>
           <div className={styles["skill__content__col2"]}>
-            <div className={styles["skill__content__title"]}>Packages</div>
+            <h3 className={styles["skill__content__title"]}>Packages</h3>
             <ul className={styles["skill__content__detail"]}>
               <li>
                 <strong>React, Django, Django REST framework, Typescript, Jest, Enzyme</strong>
@@ -45,7 +45,7 @@ const About: React.FC<{}> = () => {
             </ul>
           </div>
           <div className={styles["skill__content__col3"]}>
-            <div className={styles["skill__content__title"]}>TOOLS</div>
+            <h3 className={styles["skill__content__title"]}>TOOLS</h3>
             <ul className={styles["skill__content__detail"]}>
               <li>
                 <strong>Git, Postman</strong>
@@ -54,7 +54,7 @@ const About: React.FC<{}> = () => {
             </ul>
           </div>
           <div className={styles["skill__content__col4"]}>
-            <div className={styles["skill__content__title"]}>KNOWLEDGE</div>
+            <h3 className={styles["skill__content__title"]}>KNOWLEDGE</h3>
             <ul className={styles["skill__content__detail"]}>
               <li>
                 <strong>OOP, REST-API, RDBMS</strong>
@@ -67,6 +67,7 @@ const About: React.FC<{}> = () => {
           </div>
         </section>
       </div>
+
       <div className={styles["other"]} ref={(ref) => (otherRef.current = ref)}>
         <section className={styles["education"]}>
           <div className={styles["title"]}>EDUCATION</div>

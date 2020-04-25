@@ -7,121 +7,120 @@
   justify-content: center;
   flex-direction: row;
   overflow-y: auto;
+}
 
-  .info {
-    display: flex;
-    padding-left: 3rem;
-    flex-direction: column;
-    justify-content: center;
-    width: 60vw;
+.info {
+  display: flex;
+  padding-left: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  width: 60vw;
 
-    > div {
+  .hivery, .UNSW, .NetEase {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 50rem;
+    background-color: darken($color: #000000a6, $amount: 12);
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
 
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      width: 50rem;
-      background-color: darken($color: #000000a6, $amount: 12);
-      padding: 2rem;
-      border-radius: 1rem;
-      cursor: pointer;
-
-      .company {
-        font-size: 3.5rem;
-        color: rgba(255, 255, 255, 0.9);
-        font-weight: 800;
-      }
-    
-      .job-title {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 2rem;
-        font-weight: 600;
-      }
-
-      .description {
-        color: lightcyan;
-        font-weight: 600;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        overflow-y: hidden;
-        height: 0;
-        transition: all .5s ease-in-out;
-        font-size: 1.5rem;
-        box-sizing: border-box;
-
-        .date {
-          color: rgba(192, 192, 192, 0.5);
-          position: absolute;
-          bottom: 0;
-          right: 0;
-        }
-      }
+    .company {
+      font-size: 3.5rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 800;
+    }
+  
+    .job-title {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 2rem;
+      font-weight: 600;
     }
 
-    @media screen and (max-width: 1500px) {
+    .description {
+      color: lightcyan;
+      font-weight: 600;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow-y: hidden;
+      height: 0;
+      transition: all .5s ease-in-out;
+      font-size: 1.5rem;
+      box-sizing: border-box;
 
-      > div {
-        width: 23rem;
-        padding: 1rem;
-        border-radius: 1rem;
-
-        .company {
-          font-size: 1.5rem;
-          font-weight: 800;
-        }
-      
-        .job-title {
-          font-size: 1rem;
-        }
-    
-        .description {
-          font-size: 1rem;
-        }
-      }
-    
-    }
-
-    > div:hover {
-      .description {
-        margin-top: 20px;
-        border-top: 2px solid rgba(255, 255, 255, 255.85);
-        height: 250px;
-      }
-      @media screen and (max-width: 1500px) {
-        .description {
-          margin-top: 10px;
-          height: 200px;
-        }
+      .date {
+        color: rgba(192, 192, 192, 0.5);
+        position: absolute;
+        bottom: 0;
+        right: 0;
       }
     }
   }
-  .career-logos {
-    width: 40vw;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+}
 
-    > div {
-      transition: opacity 1s;
-      height: 70% !important;
-      padding-right: 3rem;
-      position: absolute;
-      opacity: 0;
+.info > div:hover {
+  .description {
+    margin-top: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 255.85);
+    height: 250px;
+  }
+  @media screen and (max-width: 1500px) {
+    .description {
+      margin-top: 10px;
+      height: 200px;
+    }
+  }
+}
 
-      img {
-        width: 80%;
-        height: 100%;
-        object-fit: contain;
-      }
+@media screen and (max-width: 1500px) {
+  .info > div {
+    width: 23rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    .company {
+      font-size: 1.5rem;
+      font-weight: 800;
     }
 
-    .active {
-      z-index: 999;
-      opacity: 1;
+    .job-title {
+      font-size: 1rem;
     }
+
+    .description {
+      font-size: 1rem;
+    }
+  }
+
+}
+
+.career-logos {
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  > div {
+    transition: opacity 1s;
+    height: 70% !important;
+    padding-right: 3rem;
+    position: absolute;
+    opacity: 0;
+
+    img {
+      width: 80%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .active {
+    z-index: 999;
+    opacity: 1;
   }
 }
 
