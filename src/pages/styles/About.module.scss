@@ -9,6 +9,7 @@
   min-width: 1200px;
   overflow-y: auto;
   padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 @keyframes show {
@@ -20,7 +21,8 @@
   }
 }
 
-.skill--animation, .other--animation {
+.skill--animation, 
+.other--animation {
   animation: show 2s ease-in-out;
 }
 
@@ -38,6 +40,7 @@
   background-color: rgba(255, 255, 255, 0.65);
   margin-bottom: 5vh;
 }
+
 .skill__title {
   color: rgba(0, 0, 0, .95);
   text-align: center;
@@ -72,20 +75,25 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 @media screen and (max-height: 700px) {
   .skill__content__title {
     font-size: 1.3rem;
     font-weight: 550;
   }
 }
+
 .skill__content__detail {
   margin-top: 1.3rem;
 }
-.skill__content__col1, .skill__content__col2, .skill__content__col3, .skill__content__col4 {
+
+.skill__content__col1, 
+.skill__content__col2, 
+.skill__content__col3, 
+.skill__content__col4 {
   width: 25%;
   position: relative;
 }
-
 
 .other {
   width: 60vw;

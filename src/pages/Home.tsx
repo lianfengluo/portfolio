@@ -6,13 +6,13 @@ import styles from "./styles/Home.module.scss";
 const Home: React.FC<{}> = () => {
   return (
     <div className={styles["home"]}>
-      <div className={styles["intro"]}>Hi,</div>
-      <div className={styles["intro"]}>
+      <p className={styles["intro"]}>Hi,</p>
+      <p className={styles["intro"]}>
         I'm <span className={styles["name"]}>Richard</span>
-      </div>
-      <div className={styles["bio"]}>Web developer (Frontend focus)</div>
-      <div className={styles["intro"]}>Javascript / React / HTML / CSS / Python / REST-API</div>
-      <div className={styles["icons"]}>
+      </p>
+      <p className={styles["bio"]}>Web developer (Frontend focus)</p>
+      <p className={styles["intro"]}>Javascript / React / HTML / CSS / Python / REST-API</p>
+      <section className={styles["icons"]}>
         <a href="https://github.com/lianfengluo/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={["fab", "github"]} />
         </a>
@@ -26,7 +26,7 @@ const Home: React.FC<{}> = () => {
         <a href="mailto:lianfengluo28@gmail.com" target="_top">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
-      </div>
+      </section>
     </div>
   );
 };

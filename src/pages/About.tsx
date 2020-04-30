@@ -24,9 +24,9 @@ const About: React.FC<{}> = () => {
   return (
     <div className={styles["about"]}>
       <div className={styles["skill"]} ref={(ref) => (skillRef.current = ref)}>
-        <div className={styles["skill__title"]}>Skills</div>
-        <section className={styles["skill__content"]}>
-          <div className={styles["skill__content__col1"]}>
+        <h2 className={styles["skill__title"]}>Skills</h2>
+        <main className={styles["skill__content"]}>
+          <section className={styles["skill__content__col1"]}>
             <h3 className={styles["skill__content__title"]}>LANGUAGES</h3>
             <ul className={styles["skill__content__detail"]}>
               <li>
@@ -34,8 +34,8 @@ const About: React.FC<{}> = () => {
               </li>
               <li>Java, Scala, Perl, Linux Shell, Erlang, SQL</li>
             </ul>
-          </div>
-          <div className={styles["skill__content__col2"]}>
+          </section>
+          <section className={styles["skill__content__col2"]}>
             <h3 className={styles["skill__content__title"]}>Packages</h3>
             <ul className={styles["skill__content__detail"]}>
               <li>
@@ -43,8 +43,8 @@ const About: React.FC<{}> = () => {
               </li>
               <li>Node.js, Redux</li>
             </ul>
-          </div>
-          <div className={styles["skill__content__col3"]}>
+          </section>
+          <section className={styles["skill__content__col3"]}>
             <h3 className={styles["skill__content__title"]}>TOOLS</h3>
             <ul className={styles["skill__content__detail"]}>
               <li>
@@ -52,8 +52,8 @@ const About: React.FC<{}> = () => {
               </li>
               <li>Docker, Nginx, Jira, Redis, Webpack, Elasticsearch</li>
             </ul>
-          </div>
-          <div className={styles["skill__content__col4"]}>
+          </section>
+          <section className={styles["skill__content__col4"]}>
             <h3 className={styles["skill__content__title"]}>KNOWLEDGE</h3>
             <ul className={styles["skill__content__detail"]}>
               <li>
@@ -64,8 +64,8 @@ const About: React.FC<{}> = () => {
                 Networks, AWS, Functional Oriented Programming, MapReduce, Spark/Hadoop
               </li>
             </ul>
-          </div>
-        </section>
+          </section>
+        </main>
       </div>
 
       <div className={styles["other"]} ref={(ref) => (otherRef.current = ref)}>
