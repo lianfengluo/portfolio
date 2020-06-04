@@ -8,8 +8,8 @@ interface Props {
 }
 
 const Header: React.FC<Props> = ({ title, text }) => {
-  const navBar = useRef<HTMLDivElement | null>(null);
-  const activateLink = useRef<HTMLAnchorElement | null>(null);
+  const navBar = useRef<HTMLDivElement>();
+  const activateLink = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     // Setting default tab
@@ -22,12 +22,12 @@ const Header: React.FC<Props> = ({ title, text }) => {
 
   return (
     <header className={styles["header"]}>
-      <header className={styles["header-content"]}>
+      <div className={styles["header-content"]}>
         <div className={styles["header-title"]}>{title}</div>
-      </header>
-      <div className={styles["nav-bar"]} ref={(ref) => (navBar.current = ref)}>
-        {text && text.map((v, k) => <NavTab key={k} v={v} activateLink={activateLink} />)}
       </div>
+      <nav className={styles["nav-bar"]} ref={(ref: HTMLDivElement) => (navBar.current = ref)}>
+        {text && text.map((v, k) => <NavTab key={k} v={v} activateLink={activateLink} />)}
+      </nav>
     </header>
   );
 };

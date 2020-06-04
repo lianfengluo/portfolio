@@ -7,6 +7,7 @@
     & {
       #Home, #Careers, #Projects, #About {
         transition: transform .5s ease-in-out;
+        transform-origin: bottom bottom;
         position: fixed;
         display: flex;
         height: 100%;
