@@ -70,10 +70,10 @@ const About: React.FC<{}> = () => {
 
       <div className={styles["other"]} ref={(ref) => (otherRef.current = ref)}>
         <section className={styles["education"]}>
-          <div className={styles["title"]}>EDUCATION</div>
-          <div className={styles["info"]}>
+          <div className={styles["education__title"]}>EDUCATION</div>
+          <div className={styles["education__info"]}>
             <div>
-              <time className={styles["time"]}>2018 - 2019</time>
+              <time className={styles["other__time"]}>2018 - 2019</time>
               <div>
                 <strong>Degree:</strong> Information Technology MASTER DEGREE
                 <br />
@@ -83,7 +83,7 @@ const About: React.FC<{}> = () => {
               </div>
             </div>
             <div>
-              <time className={styles["time"]}>2015 - 2018</time>
+              <time className={styles["other__time"]}>2015 - 2018</time>
               <div>
                 <strong>Degree:</strong> Information Security Bachelor DEGREE
                 <br />
@@ -95,7 +95,7 @@ const About: React.FC<{}> = () => {
           </div>
         </section>
         <section className={styles["communication"]}>
-          <div className={styles["title"]}>COMMUNICATION SKILLS</div>
+          <div className={styles["communication__title"]}>COMMUNICATION SKILLS</div>
           <div>
             <strong>CANTONESE:</strong> Native speaker
           </div>
@@ -107,9 +107,9 @@ const About: React.FC<{}> = () => {
           </div>
         </section>
         <section className={styles["community"]}>
-          <div className={styles["title"]}>SCHOOL COMMUNITY</div>
+          <div className={styles["community__title"]}>SCHOOL COMMUNITY</div>
           <div>
-            <time>2019</time>&nbsp;&nbsp;&nbsp;&nbsp;
+            <time className={styles["community__time"]}>2019</time>&nbsp;&nbsp;&nbsp;&nbsp;
             <strong>Data Science Society</strong>
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A member of

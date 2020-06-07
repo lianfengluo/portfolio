@@ -27,115 +27,127 @@
 }
 
 .skill {
-  width: 60vw;
-  height: 30vh;
-  min-height: 300px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 1rem;
-  overflow-y: hidden;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.65);
-  margin-bottom: 5vh;
-}
-
-.skill__title {
-  color: rgba(0, 0, 0, .95);
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  width: 90%;
-  font-size: 3rem;
-  font-weight: 700;
-}
-@media screen and (max-height: 700px) {
-  .skill__title {
-    font-size: 1.8rem;
+  & {
+    width: 60vw;
+    height: 30vh;
+    min-height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow-y: hidden;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 5vh;
+    padding: 1rem 0;
   }
-}
-
-.skill__content {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  height: 100%;
-  width: 90%;
-  justify-content: center;
-
-  & > :not(:last-child)  {
-    margin-right: 3px;
+  &__title {
+    color: rgba(0, 0, 0, .95);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 90%;
+    font-size: 3rem;
+    font-weight: 700;
   }
-}
-
-.skill__content__title {
-  text-align: left;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-@media screen and (max-height: 700px) {
-  .skill__content__title {
-    font-size: 1.3rem;
-    font-weight: 550;
+  @media screen and (max-height: 700px) {
+    &__title {
+      font-size: 1.8rem;
+    }
   }
-}
-
-.skill__content__detail {
-  margin-top: 1.3rem;
-}
-
-.skill__content__col1, 
-.skill__content__col2, 
-.skill__content__col3, 
-.skill__content__col4 {
-  width: 25%;
-  position: relative;
+  &__content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    height: 100%;
+    width: 90%;
+    justify-content: center;
+  
+    & > :not(:last-child)  {
+      margin-right: 3px;
+    }
+    &__title {
+      text-align: left;
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    
+    @media screen and (max-height: 700px) {
+      &__title {
+        font-size: 1.3rem;
+        font-weight: 550;
+      }
+    }
+    
+    &__detail {
+      margin-top: 1.3rem;
+      padding: 0 1rem;
+    }
+    &__col1, &__col2, &__col3, &__col4 {
+      width: 25%;
+      position: relative;
+    }
+  }
 }
 
 .other {
-  width: 60vw;
-  height: 45vh;
-  flex-direction: column;
-  border-radius: 1rem;
-  overflow-y: hidden;
-  color: rgba(0, 0, 0, 0.65098);
-  background-color: rgba(255, 255, 255, 0.65);;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 3rem;
-  min-height: 450px;
-}
-
-.other > section {
-  height: 33.33%;
-  width: 100%;
-  overflow-y: hidden;
-  min-height: 138px;
-  justify-content: center;
-}
-
-.other .title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: .5rem;
-}
-
-.other .education .info {
-  display: flex;
-  
-  > div {
-    flex: 1;
+  & {
+    width: 60vw;
+    height: 45vh;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow-y: hidden;
+    color: rgba(0, 0, 0, 0.65098);
+    background-color: rgba(255, 255, 255, 0.65);;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem;
+    min-height: 450px;
+  }
+  & > section {
+    height: 33.33%;
+    width: 100%;
+    overflow-y: hidden;
+    min-height: 138px;
+    justify-content: center;
+  }
+  &__time {
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 }
-.other .communication {
+
+.communication {
   display: flex;
   flex-direction: column;
 }
-.other .community {
-  display: flex;
-  flex-direction: column;
+.community {
+  & {
+    display: flex;
+    flex-direction: column;
+  }
+  &__time {
+    font-weight: 600;
+  }
+}
+
+.education {
+  &__info {
+    display: flex;
+    
+    > div {
+      flex: 1;
+    }
+  }
+}
+
+.communication, .community, .education {
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
 }
