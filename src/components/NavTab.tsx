@@ -19,14 +19,14 @@ const NavTab: React.FC<Props> = ({ v, activateLink }) => {
           currentRef.current = ref;
         }}
         onClick={() => {
-          activateLink.current?.classList.remove(styles["active"]);
+          activateLink.current?.classList.remove(styles["nav-tab--active"]);
           document.body.setAttribute("class", v.toLowerCase());
           activateLink.current = currentRef.current;
-          currentRef.current?.classList.add(styles["active"]);
+          currentRef.current?.classList.add(styles["nav-tab--active"]);
           window.history.pushState(null, v, `#${v}`);
         }}
       >
-        <span className={styles["nav-tab-text"]}>{v}</span>
+        <span className={styles["nav-tab__text"]}>{v}</span>
       </a>
     </div>
   );

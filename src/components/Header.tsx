@@ -22,8 +22,8 @@ const Header: React.FC<Props> = ({ title, text }) => {
 
   return (
     <header className={styles["header"]}>
-      <div className={styles["header-content"]}>
-        <div className={styles["header-title"]}>{title}</div>
+      <div className={styles["header__content"]}>
+        <div className={styles["header__title"]}>{title}</div>
       </div>
       <nav className={styles["nav-bar"]} ref={(ref: HTMLDivElement) => (navBar.current = ref)}>
         {text && text.map((v, k) => <NavTab key={k} v={v} activateLink={activateLink} />)}
