@@ -112,8 +112,9 @@ const About: React.FC<{}> = () => {
             <time className={styles["community__time"]}>2019</time>&nbsp;&nbsp;&nbsp;&nbsp;
             <strong>Data Science Society</strong>
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A member of
-            education team at UNSW data science
+            <p className={styles["community__detail"]}>
+              A member of education team at UNSW data science
+            </p>
           </div>
         </section>
       </div>
