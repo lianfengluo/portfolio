@@ -6,7 +6,7 @@
   :global {
     & {
       #Home, #Careers, #Projects, #About {
-        transition: transform .5s ease-in-out;
+        transition: transform .5s linear;
         transform-origin: bottom bottom;
         position: fixed;
         display: flex;
