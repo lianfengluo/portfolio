@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBlog } from "@fortawesome/free-solid-svg-icons";
 import styles from "./styles/Home.module.scss";
 
 const Home: React.FC<{}> = () => {
@@ -22,6 +22,13 @@ const Home: React.FC<{}> = () => {
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={["fab", "linkedin"]} />
+        </a>
+        <a
+          href="https://richardluo-gatsby-blog.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faBlog} />
         </a>
         <a href="mailto:lianfengluo28@gmail.com" target="_top">
           <FontAwesomeIcon icon={faEnvelope} />
