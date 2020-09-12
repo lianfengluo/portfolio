@@ -1,0 +1,36 @@
+@keyframes entry {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+    display: none;
+  }
+}
+
+@keyframes line-animate {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+  width: 100vw;
+  height: 100vh;
+  min-width: 1120px;
+  min-height: 200px;
+  z-index: 999;
+  position: absolute;
+  background: rgba(10, 24, 27, 0.95);
+  pointer-events: none;
+  animation: entry .5s ease-in-out forwards 2.5s;
+}
+.logo {
+  fill: white !important;
+  path {stroke-dashoffset: 800; stroke-dasharray: 800; animation: line-animate 2s ease forwards}
+}

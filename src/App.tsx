@@ -3,6 +3,7 @@ import React from "react";
 // components
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import EnterAnimation from "./components/EnterAnimation";
 
 // pages
 import Home from "./pages/Home";
@@ -21,24 +22,27 @@ const navTab: string[] = ["Home", "Careers", "Projects", "About"];
 
 const App: React.FC<{}> = () => {
   return (
-    <div className={styles["App"]}>
-      <Header title={"Richard's Portfolio"} text={navTab} />
-      <main className={styles["Content"]}>
-        <div id="Home">
-          <Home />
-        </div>
-        <div id="Careers">
-          <Careers />
-        </div>
-        <div id="Projects">
-          <Projects />
-        </div>
-        <div id="About">
-          <About />
-        </div>
-      </main>
-      <Footer />
-    </div>
+    <>
+      <EnterAnimation />
+      <div className={styles["App"]}>
+        <Header title={"Richard's Portfolio"} text={navTab} />
+        <main className={styles["Content"]}>
+          <div id="Home">
+            <Home />
+          </div>
+          <div id="Careers">
+            <Careers />
+          </div>
+          <div id="Projects">
+            <Projects />
+          </div>
+          <div id="About">
+            <About />
+          </div>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 };
 

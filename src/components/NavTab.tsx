@@ -9,7 +9,7 @@ interface Props {
 const NavTab: React.FC<Props> = ({ v, activateLink }) => {
   const currentRef = useRef<HTMLAnchorElement | null>(null);
   return (
-    <div className={styles["nav-tab"]}>
+    <nav className={styles["nav-tab"]}>
       <a
         href={`#${v}`}
         ref={(ref) => {
@@ -28,7 +28,7 @@ const NavTab: React.FC<Props> = ({ v, activateLink }) => {
       >
         <span className={styles["nav-tab__text"]}>{v}</span>
       </a>
-    </div>
+    </nav>
   );
 };
 
