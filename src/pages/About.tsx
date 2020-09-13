@@ -39,9 +39,11 @@ const About: React.FC<{}> = () => {
             <h3 className={styles["skill__content__title"]}>Packages</h3>
             <ul className={styles["skill__content__detail"]}>
               <li>
-                <strong>React, Django, Django REST framework, Typescript, Jest, Enzyme</strong>
+                <strong>
+                  React, Redux, Django, Django REST framework, Typescript, Jest, Enzyme, Cypress
+                </strong>
               </li>
-              <li>Node.js, Redux</li>
+              <li>Node.js</li>
             </ul>
           </section>
           <section className={styles["skill__content__col3"]}>
@@ -50,14 +52,14 @@ const About: React.FC<{}> = () => {
               <li>
                 <strong>Git, Postman</strong>
               </li>
-              <li>Docker, Nginx, Jira, Redis, Webpack, Elasticsearch</li>
+              <li>Docker, Nginx, Jira, Redis, Webpack, Elasticsearch, kubernetes</li>
             </ul>
           </section>
           <section className={styles["skill__content__col4"]}>
             <h3 className={styles["skill__content__title"]}>KNOWLEDGE</h3>
             <ul className={styles["skill__content__detail"]}>
               <li>
-                <strong>OOP, REST-API, RDBMS</strong>
+                <strong>OOP, REST-API, RDBMS, SVG</strong>
               </li>
               <li>
                 Data Science, Machine Learning, Security, Networking, NoSql, Operating System,
