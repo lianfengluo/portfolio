@@ -15,9 +15,26 @@
   color: rgba(255, 255, 255, 0.5);
   font-size: 3.5rem;
   font-weight: 600;
+  display: flex;
+}
+
+@keyframes showup {
+  from {
+    transform: translate3d(0, -50%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 .name {
   color: salmon;
+  margin-left: .5rem;
+  position: relative;
+  display: block;
+  opacity: 0;
+  animation: showup 1s ease-in 3s forwards;
 }
 .name:hover {
   color: rgb(246, 103, 87);
