@@ -67,7 +67,6 @@
 }
 
 .nav-tab {
-  $blockClass: &;
   & {
     height: 100%;
     display: flex;
@@ -101,13 +100,6 @@
   &__text {
     padding-left: 30px;
     padding-right: 30px;
-    border-right: 1px solid rgba(206, 206, 206, 0.4);
-  }
-  
-  &:first-child {
-    #{$blockClass}__text {
-      border-left: 1px solid rgba(206, 206, 206, 0.4);
-    }
   } 
 }
 
