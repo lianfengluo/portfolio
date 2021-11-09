@@ -15,11 +15,11 @@
   flex-direction: column;
   justify-content: center;
   width: 60vw;
-
 }
 
-.hivery, 
-.UNSW, 
+.atlassian,
+.hivery,
+.UNSW,
 .NetEase {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -49,7 +49,7 @@
     flex-direction: column;
     overflow-y: hidden;
     height: 0;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     font-size: 1.5rem;
     box-sizing: border-box;
 
@@ -125,4 +125,3 @@
     opacity: 1;
   }
 }
-
