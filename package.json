@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/css": "^11.5.0",
+    "@emotion/react": "^11.5.0",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
@@ -21,7 +23,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.3",
     "sass": "^1.26.10",
-    "typescript": "~3.7.2"
+    "typescript": "^3.7.7"
   },
   "homepage": "https://lianfengluo.github.io/portfolio/",
   "scripts": {
@@ -48,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.16.0",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
