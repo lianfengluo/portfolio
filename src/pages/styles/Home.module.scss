@@ -15,7 +15,6 @@
   color: rgba(255, 255, 255, 0.5);
   font-size: 3.5rem;
   font-weight: 600;
-  display: flex;
 }
 
 @keyframes showup {
@@ -30,9 +29,8 @@
 }
 .name {
   color: salmon;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   position: relative;
-  display: block;
   opacity: 0;
   animation: showup 1s ease-in 3s forwards;
 }
@@ -69,4 +67,3 @@
     font-size: 70px;
   }
 }
-
