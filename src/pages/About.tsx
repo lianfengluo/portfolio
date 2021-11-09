@@ -32,7 +32,7 @@ const About: React.FC<{}> = () => {
               <li>
                 <strong>Python, JavaScript, CSS, C/C++, HTML</strong>
               </li>
-              <li>Java, Scala, Perl, Linux Shell, Erlang, SQL</li>
+              <li>Kotlin, Java, Scala, Perl, Linux Shell, Erlang, SQL</li>
             </ul>
           </section>
           <section className={styles["skill__content__col2"]}>
