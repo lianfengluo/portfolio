@@ -22,12 +22,12 @@
   z-index: 999;
   transition: opacity 1s;
   animation: invisible 3s;
+  animation-delay: 2.5s;
 }
 
 .author {
   font-weight: 600;
 }
-
 
 .footer:hover {
   opacity: 1 !important;

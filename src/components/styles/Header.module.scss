@@ -12,7 +12,6 @@
     width: 100%;
     display: flex;
     background: rgba(0, 0, 0, 0.637);
-    justify-content: space-between;
     align-items: center;
     line-height: 200%;
     min-width: 800px;
@@ -25,6 +24,7 @@
     z-index: 999;
     transition: opacity 1s;
     animation: invisible 3s;
+    animation-delay: 2.5s;
   }
 
   @media only screen and (max-width: 1400px) {
@@ -53,7 +53,6 @@
     font-family: Brush Script MT, Chalkduster;
   }
 }
-
 
 .nav-bar {
   height: 100%;
@@ -90,7 +89,7 @@
       border-bottom: 5px solid rgb(226, 226, 226);
     }
   }
-  
+
   &--active {
     color: rgba(255, 255, 255, 0.8);
     border-top: 5px solid rgba(0, 0, 0, 0);
@@ -100,6 +99,5 @@
   &__text {
     padding-left: 30px;
     padding-right: 30px;
-  } 
+  }
 }
-
