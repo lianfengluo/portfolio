@@ -1,3 +1,6 @@
+/** @jsx jsx */
+import { Global, jsx } from "@emotion/react";
+import { globalCss, appCss } from "./App.styles";
 import React from "react";
 
 // components
@@ -11,22 +14,20 @@ import Careers from "./pages/Careers";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 
-import styles from "./App.module.scss";
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import "./App.scss";
 
 library.add(fab);
 const navTab: string[] = ["Home", "Careers", "Projects", "About"];
 
 const App: React.FC<{}> = () => {
   return (
-    <>
+    <React.Fragment>
+      <Global styles={globalCss} />
       <EnterAnimation />
-      <div className={styles["App"]}>
+      <div css={appCss}>
         <Header title={"Richard's Portfolio"} text={navTab} />
-        <main className={styles["Content"]}>
+        <main>
           <div id="Home">
             <Home />
           </div>
@@ -42,7 +43,7 @@ const App: React.FC<{}> = () => {
         </main>
         <Footer />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

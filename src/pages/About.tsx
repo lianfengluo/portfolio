@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 import styles from "./styles/About.module.scss";
 
 const About: React.FC<{}> = () => {
-  const skillRef = useRef<HTMLDivElement | null>();
-  const otherRef = useRef<HTMLDivElement | null>();
+  const skillRef = useRef<HTMLDivElement | null>(null);
+  const otherRef = useRef<HTMLDivElement | null>(null);
   const hashChangeCallback = () => {
     if (window.location.hash === "#About") {
       skillRef.current?.classList.add(styles["skill--animation"]);
@@ -23,7 +23,7 @@ const About: React.FC<{}> = () => {
 
   return (
     <div className={styles["about"]}>
-      <div className={styles["skill"]} ref={(ref) => (skillRef.current = ref)}>
+      <div className={styles["skill"]} ref={skillRef}>
         <h2 className={styles["skill__title"]}>Skills</h2>
         <main className={styles["skill__content"]}>
           <section className={styles["skill__content__col1"]}>
@@ -70,7 +70,7 @@ const About: React.FC<{}> = () => {
         </main>
       </div>
 
-      <div className={styles["other"]} ref={(ref) => (otherRef.current = ref)}>
+      <div className={styles["other"]} ref={otherRef}>
         <section className={styles["education"]}>
           <div className={styles["education__title"]}>EDUCATION</div>
           <div className={styles["education__info"]}>
